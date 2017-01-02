@@ -1,5 +1,6 @@
 var wintick = [];
 var totaltick = [];
+var curround = document.getElementById("RoundNumber1");
 
 function totalTickets()
 {
@@ -16,5 +17,6 @@ function addWintick(val)
 {
 	wintick[wintick.length] = val;
 	totaltick[totaltick.length] = totalTickets();
+	roundnum[roundnum.length] = curround.innerHTML.split('#')[1];
 	console.log("Logged Ticket || " + val + " / " + totalTickets());
 }
